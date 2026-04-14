@@ -86,7 +86,7 @@ Si necesitas realizar ajustes finos en la interfaz (posiciones, colores o dimens
 1. Instala **Ventoy** en tu unidad USB.
 2. Descarga este repositorio.
 3. Copia la carpeta `ventoy` de este repo directamente a la raíz de tu pendrive.
-4. En la carpeta `ISO` en la raíz del pendrive y organiza tus archivos según la nomenclatura especificada en la sección de estructura para que los alias y tips se apliquen automáticamente.
+4. Crea la carpeta `ISO` en la raíz del pendrive y organiza tus archivos según la nomenclatura especificada en la sección de estructura para que los alias y tips se apliquen automáticamente.
 
 ---
 
