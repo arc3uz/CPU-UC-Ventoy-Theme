@@ -1,0 +1,78 @@
+{
+    "_comentario": [
+        { "text": "Tema desarrollado por arc3uz para la iniciativa CPU UC," },
+        { "text": "Basado en el ecosistema de Software Libre y con la intención de ser un tema ligero, moderno y funcional para Ventoy." }
+        { "text": "https://github.com/arc3uz/CPU-UC-Ventoy-Theme.git" }
+    ],
+    
+    "control": [
+        { "VTOY_DEFAULT_MENU_MODE": "1" },
+        { "VTOY_FILT_DOT_UNDERSCORE_FILE": "1" },
+        { "VTOY_DEFAULT_SEARCH_ROOT": "/ISO" },
+        { "VTOY_MENU_LANGUAGE": "es_ES" },
+        { "VTOY_DEFAULT_KBD_LAYOUT": "QWERTY_ES" },
+        { "VTOY_TREE_VIEW_MENU_STYLE": "0" }
+        
+    ],
+
+    "theme": {
+        "file": "/ventoy/theme/CPU_UC/theme.txt",
+        "gfxmode": "1920x1080,1366x768,1280x720,1024x768",
+        "display_mode": "GUI",
+        "ventoy_color": "#ffffff",
+        "ventoy_left": "150%",
+        "ventoy_top": "150%",
+        "fonts": [
+            "/ventoy/theme/CPU_UC/hackb_18.pf2",
+            "/ventoy/theme/CPU_UC/norwester_16.pf2",
+            "/ventoy/theme/CPU_UC/norwester_20.pf2",
+            "/ventoy/theme/CPU_UC/norwester_22.pf2"
+        ]
+    },
+
+    "menu_alias": [
+        { "dir": "/ISO/1- Sistemas Operativos", "alias": "[Sistemas Operativos]" },
+        { "dir": "/ISO/1- Sistemas Operativos/Windows", "alias": "[Windows]" },
+        { "dir": "/ISO/1- Sistemas Operativos/Linux", "alias": "[Linux]" },
+
+        { "image": "/ISO/1- Sistemas Operativos/Windows/1-en-us_windows_10_iot_enterprise_ltsc_2021_x64_dvd_257ad90f.iso", "alias": "Windows 10 IoT LTSC 2021 EN" },
+        { "image": "/ISO/1- Sistemas Operativos/Windows/2-es-mx_windows_10_enterprise_ltsc_2021_x64_dvd_f6aaf384.iso", "alias": "Windows 10 LTSC 2021 ES" },
+        { "image": "/ISO/1- Sistemas Operativos/Windows/3-Windows 11 IoT Enterprise LTSC 2024.iso", "alias": "Windows 11 IoT LTSC 2024" },
+        { "image": "/ISO/1- Sistemas Operativos/Windows/4-es-mx_windows_11_enterprise_ltsc_2024_x64_dvd_3310c094.iso", "alias": "Windows 11 LTSC 2024 ES" },
+
+        { "image": "/ISO/1- Sistemas Operativos/Linux/1_Zorin-OS-18-Education-64-bit-r3.iso", "alias": "Zorin OS 18 Education" },
+        { "image": "/ISO/1- Sistemas Operativos/Linux/2_Linux_Mint_20.1_XFCE_x64.iso", "alias": "Linux Mint 20.1 XFCE" },
+        { "image": "/ISO/1- Sistemas Operativos/Linux/4_Arch_Linux_2021.05_x64.iso", "alias": "Arch Linux 2021.05" },
+        { "image": "/ISO/1- Sistemas Operativos/Linux/5_Fedora-KDE-Desktop-Live-43-1.6.x86_64.iso", "alias": "Fedora 43 KDE Live" },
+
+        { "image": "/ISO/1_WinPE11_10_Sergei_Strelec_x64_2026.03.03_English.iso", "alias": "WinPE Sergei Strelec (Diagnóstico)" },
+        { "image": "/ISO/2_MemTest86plus.iso", "alias": "MemTest86+ (Prueba de RAM)" },
+        { "image": "/ISO/3_shredos-2025.11_28_i686_v0.40_20260204_lite.iso", "alias": "ShredOS (Borrado Seguro)" },
+        { "image": "/ISO/4_Clonezilla_Live_2026_x64.iso", "alias": "Clonezilla Live (Clonación)" },
+        { "image": "/ISO/5_SystemRescue_12.03_x64.iso", "alias": "SystemRescue 12.03" }
+    ],
+
+    "menu_class": [
+        { "key": "vtoyret", "class": "cancel" },
+        { "key": "vtoydir", "class": "submenu" },
+        { "key": "vtoyiso", "class": "unknown" },
+
+        { "dir": "/ISO/1- Sistemas Operativos", "class": "windows11" },
+        { "dir": "/ISO/1- Sistemas Operativos/Windows", "class": "windows11" },
+        { "dir": "/ISO/1- Sistemas Operativos/Linux", "class": "linux" },
+
+        { "parent": "/ISO/1- Sistemas Operativos/Windows", "class": "windows11" },
+        { "parent": "/ISO/1- Sistemas Operativos/Linux", "class": "linux" },
+
+        { "key": "Windows", "class": "windows11" },
+        { "key": "Zorin", "class": "zorin" },
+        { "key": "Mint", "class": "linuxmint" },
+        { "key": "Arch", "class": "archlinux" },
+        { "key": "Fedora", "class": "fedora" },
+        { "key": "WinPE", "class": "recovery" },
+        { "key": "MemTest", "class": "memtest" },
+        { "key": "shredos", "class": "edit" },
+        { "key": "Clonezilla", "class": "driver" },
+        { "key": "SystemRescue", "class": "SystemRescueCD" }
+    ]
+}

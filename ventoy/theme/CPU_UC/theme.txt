@@ -1,0 +1,72 @@
+# CPU UC - Ventoy Theme
+# Tema desarrollado por arc3uz para la iniciativa CPU UC
+# Basado en el ecosistema de Software Libre
+# https://github.com/arc3uz/CPU-UC-Ventoy-Theme.git
+
+desktop-image: "background.png"
+terminal-font: "Norwester Regular 20"
+terminal-box: "menu_bkg_*.png"
+title-text: ""
+
++ label {
+    left = 0%
+    top = 12%
+    width = 100%
+    align = "center"
+    text = "Reactivando tecnología, revitalizando futuros"
+    font = "Norwester Regular 22"
+    color = "#00FFFF"
+}
+
++ label {
+    left = 0%
+    top = 16%
+    width = 100%
+    align = "center"
+    text = "Reacondicionar · Instalar · Recuperar"
+    font = "Norwester Regular 16"
+    color = "#00FFFF"
+}
+
++ label {
+    top = 95%
+    left = 40%
+    width = 20%
+    align = "center"
+    text = "[F5] Apagar / Entrar a BIOS"
+    color = "#00FFFF"  
+    font = "Unifont Regular 20"
+}
+
++ boot_menu {
+    menu_pixmap_style = "boot_menu_*.png"
+    width = 70%
+    height = 56%
+    left = 16%
+    top = 22%
+    item_font = "Hack Bold 18"
+    item_color = "#d7dde6"
+    selected_item_font = "Norwester Regular 22"
+    selected_item_color = "#49e3c1"
+    icon_width = 32
+    icon_height = 32
+    item_icon_space = 20
+    item_height = 45
+    selected_item_pixmap_style = "select_*.png"
+    scrollbar = true
+    scrollbar_width = 6
+    scrollbar_thumb = "slider_*.png"
+}
+
++ progress_bar {
+    id = "__timeout__"
+    left = 10%
+    width = 80%
+    top = 82%
+    height = 12
+    text_color = "#ffffff"
+    font = "Norwester Regular 16"
+    bar_style = "progress_bar_*.png"
+    highlight_style = "progress_highlight_*.png"
+}
+
